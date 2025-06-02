@@ -1,6 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-
 export default function MaccreativLandingPage() {
   return (
     <main className="min-h-screen bg-white text-black p-6">
@@ -15,34 +12,31 @@ export default function MaccreativLandingPage() {
           maccreativ.com is a unique upcycling project that transforms iconic Apple computers into high-quality furniture and design pieces.
           The entire project is now for sale – ready to scale or continue as a collectible design label.
         </p>
-        <Card className="my-8 text-left">
-          <CardContent className="p-6">
-            <h2 className="text-2xl font-semibold mb-2">Was im Paket enthalten ist / What’s Included</h2>
-            <ul className="list-disc list-inside">
-              <li>Domain: www.maccreativ.com</li>
-              <li>Markenkonzept inkl. Branding, Bilder, Pläne</li>
-              <li>ca. 10 PowerMac G4 Gehäuse</li>
-              <li>ca. 10 PowerMac G5 Gehäuse</li>
-              <li>ca. 5 iMac G3 Gehäuse</li>
-              <li>Zahlreiche Einzelteile und Bauteile</li>
-              <li>Jeweils 1 fertiges Unikat je Produkt (Bar, Tisch, Vogelhaus, etc.)</li>
-            </ul>
-          </CardContent>
-        </Card>
-        <Card className="my-8 text-left">
-          <CardContent className="p-6">
-            <h2 className="text-2xl font-semibold mb-2">Preis / Price</h2>
-            <p className="text-lg">€ 50.000,- (netto)</p>
-            <p className="text-sm text-gray-600">inkl. Domain, Lagerbestand, Produktbilder, Markenrechte & Baupläne</p>
-          </CardContent>
-        </Card>
-        <Card className="my-8 text-left">
-          <CardContent className="p-6">
-            <h2 className="text-2xl font-semibold mb-2">Kontakt / Contact</h2>
-            <p>Walter Egger</p>
-            <p>Email: <a href="mailto:mail@walteregger.eu" className="text-blue-600 underline">mail@walteregger.eu</a></p>
-          </CardContent>
-        </Card>
+
+        <div className="border rounded shadow my-8 text-left p-6">
+          <h2 className="text-2xl font-semibold mb-2">Was im Paket enthalten ist / What’s Included</h2>
+          <ul className="list-disc list-inside">
+            <li>Domain: www.maccreativ.com</li>
+            <li>Markenkonzept inkl. Branding, Bilder, Pläne</li>
+            <li>ca. 10 PowerMac G4 Gehäuse</li>
+            <li>ca. 10 PowerMac G5 Gehäuse</li>
+            <li>ca. 5 iMac G3 Gehäuse</li>
+            <li>Zahlreiche Einzelteile und Bauteile</li>
+            <li>Jeweils 1 fertiges Unikat je Produkt (Bar, Tisch, Vogelhaus, etc.)</li>
+          </ul>
+        </div>
+
+        <div className="border rounded shadow my-8 text-left p-6">
+          <h2 className="text-2xl font-semibold mb-2">Preis / Price</h2>
+          <p className="text-lg">€ 50.000,- (netto)</p>
+          <p className="text-sm text-gray-600">inkl. Domain, Lagerbestand, Produktbilder, Markenrechte & Baupläne</p>
+        </div>
+
+        <div className="border rounded shadow my-8 text-left p-6">
+          <h2 className="text-2xl font-semibold mb-2">Kontakt / Contact</h2>
+          <p>Walter Egger</p>
+          <p>Email: <a href="mailto:mail@walteregger.eu" className="text-blue-600 underline">mail@walteregger.eu</a></p>
+        </div>
 
         <div className="my-12">
           <h2 className="text-2xl font-semibold mb-4">Produkte / Product Gallery</h2>
@@ -74,7 +68,9 @@ export default function MaccreativLandingPage() {
           </div>
         </div>
 
-        <Button className="mt-4 text-lg">Jetzt anfragen / Inquire now</Button>
+        <button className="mt-6 px-6 py-3 bg-black text-white rounded text-lg">
+          Jetzt anfragen / Inquire now
+        </button>
       </section>
     </main>
   );
